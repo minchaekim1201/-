@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>소라고둥의 대답</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>🐚 소라고둥의 대답</h1>
+
+    <p id="question"></p>
+    <h2 id="answer"></h2>
+
+    <button onclick="history.back()">다시 질문하기</button>
+
+    <script>
+        document.getElementById("question").textContent =
+            "질문: " + localStorage.getItem("question");
+
+        document.getElementById("answer").textContent =
+            localStorage.getItem("answer");
+    </script>
+
+</body>
+</html>
